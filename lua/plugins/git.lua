@@ -19,32 +19,6 @@ return {
     end
   },
 	{
-		"NeogitOrg/neogit",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-telescope/telescope.nvim",
-			"ibhagwan/fzf-lua",
-		},
-		keys = {
-			{
-				"<leader>Gg",
-				function ()
-					require("neogit").open()
-				end,
-				desc = "Open Neogit"
-			}
-		},
-		config = function ()
-			require("neogit").setup({
-        integrations = {
-          telescope = false,
-          diffview = false,
-          fzf_lua = false,
-        }
-      })
-		end
-	},
-	{
 		"pwntester/octo.nvim",
 		dependencies = {
 			'nvim-lua/plenary.nvim',

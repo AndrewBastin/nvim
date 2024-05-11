@@ -67,6 +67,7 @@ return {
       { "<leader>gp", "<cmd>FzfLua live_grep<cr>", desc = "Fuzzy Find (Live Project Grep)" },
 			{ "<leader>Gb", "<cmd>FzfLua git_branches<cr>", desc = "Fuzzy Find (Git Branches)" },
 			{ "<leader>Gc", "<cmd>FzfLua git_commits<cr>", desc = "Fuzzy Find (Git Commits)" },
+      { "<leader>Gg", "<cmd>FzfLua git_status<cr>", desc = "Git Status" },
 		},
 		opts = {},
 		config = function(_, opts)
