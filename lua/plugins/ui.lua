@@ -223,5 +223,16 @@ return {
         max_filename_length = 0
       })
     end
+  },
+  {
+    "f-person/git-blame.nvim",
+    event = "VeryLazy",
+    config = function ()
+      require("gitblame").setup({
+        enabled = true,
+        delay = 0,
+        virtual_text_column = 100
+      })
+    end
   }
 }

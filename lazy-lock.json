@@ -14,6 +14,7 @@
   "flash.nvim": { "branch": "main", "commit": "7bb4a9c75d1e20cd24185afedeaa11681829ba23" },
   "formatter.nvim": { "branch": "master", "commit": "ad246d34ce7a32f752071ed81b09b94e6b127fad" },
   "fzf-lua": { "branch": "main", "commit": "9c953dfa7650191d892800333d187f3439e01afd" },
+  "git-blame.nvim": { "branch": "master", "commit": "fb84fad97cd4b51caee3c865e8a33a0d413b77a8" },
   "gitsigns.nvim": { "branch": "main", "commit": "805610a9393fa231f2c2b49cb521bfa413fadb3d" },
   "lazy.nvim": { "branch": "main", "commit": "d3974346b6cef2116c8e7b08423256a834cb7cbc" },
   "lsp_signature.nvim": { "branch": "master", "commit": "aed5d1162b0f07bb3af34bedcc5f70a2b6466ed8" },
