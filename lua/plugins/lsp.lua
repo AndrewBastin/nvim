@@ -39,7 +39,14 @@ return {
 		},
 		opts = {
 			automatic_installation = true,
-      handlers = {
+		},
+		init = function(_, opts)
+			require("mason").setup()
+			require("mason-lspconfig").setup(opts)
+      require("mason-lspconfig").setup_handlers {
+        function (server_name)
+            require("lspconfig")[server_name].setup {}
+        end,
         ["volar"] = function()
           require("lspconfig").volar.setup({
             filetypes = { "vue", "javascript", "typescript", "javascriptreact", "typescriptreact" },
@@ -54,10 +61,6 @@ return {
           })
         end
       }
-		},
-		init = function(_, opts)
-			require("mason").setup()
-			require("mason-lspconfig").setup(opts)
 		end
 	},
 	{
