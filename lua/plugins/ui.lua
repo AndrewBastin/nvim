@@ -207,5 +207,21 @@ return {
     config = function ()
       require("custom_plugins.proj.plugin.proj").setup()
     end
+  },
+  {
+    "yorickpeterse/nvim-pqf",
+    lazy = false,
+    config = function ()
+      require("pqf").setup({
+        signs = {
+          error = "E",
+          warning = "W",
+          info = "I",
+          hint = "H"
+        },
+        show_multiple_lines = false,
+        max_filename_length = 0
+      })
+    end
   }
 }
