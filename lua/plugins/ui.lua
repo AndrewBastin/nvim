@@ -1,17 +1,14 @@
 return {
 	-- Color Scheme
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
+		"sainnhe/sonokai",
+		name = "sonokai",
 		lazy = false,
 		init = function()
-			vim.cmd([[colorscheme catppuccin-mocha]])
+      vim.g.sonokai_enable_italic = true
+      vim.g.sonokai_style = "espresso"
+			vim.cmd.colorscheme("sonokai")
 		end
-	},
-
-	{
-		"everblush/everblush.nvim",
-		lazy = false,
 	},
 
 	{
