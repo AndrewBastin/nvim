@@ -45,7 +45,9 @@ return {
 			require("mason-lspconfig").setup(opts)
       require("mason-lspconfig").setup_handlers {
         function (server_name)
-            require("lspconfig")[server_name].setup {}
+            if server_name ~= "tsserver" then
+              require("lspconfig")[server_name].setup {}
+            end
         end,
         ["volar"] = function()
           require("lspconfig").volar.setup({
