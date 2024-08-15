@@ -231,5 +231,18 @@ return {
     config = function(_, opts)
       require("lsp_signature").setup(opts)
     end
+  },
+  {
+    "luckasRanarison/tailwind-tools.nvim",
+    name = "tailwind-tools",
+    build = ":UpdateRemotePlugins",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-telescope/telescope.nvim",
+    },
+    opts = {},
+    config = function (_, opts)
+      require("tailwind-tools").setup(opts)
+    end
   }
 }
